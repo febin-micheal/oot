@@ -32,16 +32,29 @@ class Senior: public Department
 public:
 	void display()
 	{
-		
+		if(exp>10)
+		{
+			cout<<"\nEmployee name: "<<name<<"\nExperience: "<<exp<<"\nSalary: "<<salary<<"\nDepartment name: "<<dept_name;
+		}
 	}
 };
 
 int main()
 {
-	Senior emp[5];
-	for (int i = 0; i < 5; ++i)
+	int n;
+	cout<<"enter no. of employees: ";
+	cin>>n;
+	Senior emp[n];
+	for (int i = 0; i < n; ++i)
 	{
 		/* code */
 		emp[i].read();
 	}
+
+	for (int i = 0; i < n; ++i)
+	{
+		/* code */
+		emp[i].display();
+	}	
+	return 0;
 }
