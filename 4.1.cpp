@@ -14,7 +14,7 @@ public:
 	}
 
 };
-class Test: public Student
+class Test: public virtual Student
 {
 public:
 	int m1,m2;
@@ -27,7 +27,7 @@ public:
 	}
 	
 };
-class Sports
+class Sports: public virtual Student
 {
 public:
 	int w;
